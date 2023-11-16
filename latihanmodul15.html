@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Program JavaScript dengan Alert, Prompt, Confirm, dan Form</title>
+    <script>
+      function showAlert() {
+        alert("Ini adalah pesan alert!");
+      }
+
+      function showPrompt() {
+        var nama = prompt("Masukkan nama Anda:");
+        if (nama) {
+          alert("Halo, " + nama + "!");
+        } else {
+          alert("Anda belum memasukkan nama!");
+        }
+      }
+
+      function showConfirm() {
+        var result = confirm("Apakah Anda yakin ingin melanjutkan?");
+        if (result) {
+          alert("Anda memilih OK!");
+        } else {
+          alert("Anda memilih Cancel!");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <center>
+      <u>
+        <h1>Program JavaScript dengan Alert, Prompt, Confirm, dan Form</h1>
+      </u>
+
+      <button onclick="showAlert()">Tampilkan Alert</button>
+      <button onclick="showPrompt()">Tampilkan Prompt</button>
+      <button onclick="showConfirm()">Tampilkan Confirm</button>
+
+      <form>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" />
+        <button type="submit">Submit</button>
+      </form>
+    </center>
+  </body>
+</html>
